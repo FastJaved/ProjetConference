@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<script src="js/telephone.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximumscale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog DevFest Nantes</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script type="module"
+        src="https://unpkg.com/@ionic/pwaelements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+    <script nomodule
+        src="https://unpkg.com/@ionic/pwaelements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script type="module">
+        import { menuController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+        window.menuController = menuController;
+    </script>
+</head>
+
+<body>
+
+    <ion-app>
+        <ion-menu side="start" content-id="main-content">
+            <ion-header>
+                <ion-toolbar translucent>
+                    <ion-title>Menu</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-list>
+                    <a href="sessions.html">
+                        <ion-item>
+                            <ion-label>Sessions</ion-label>
+                        </ion-item>
+                    </a>
+
+                    <a href="speakers.html">
+                        <ion-item>
+                            <ion-label>Présentateurs</ion-label>
+                        </ion-item>
+                    </a>
+                    <a href="telephone.html">
+                        <ion-item>
+                            <ion-label>Téléphone</ion-label>
+                        </ion-item>
+                    </a>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+
+        <div class="ion-page" id="main-content">
+            <ion-header>
+                <ion-toolbar>
+                    <ion-buttons slot="start">
+                        <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                    <ion-title>Téléphone</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+                <ion-content>
+                    <div class="container"></div>
+
+                    <div id="deviceready" class="blink">
+                        <ul>
+                            <li id="platform"></li>
+                            <li id="version"></li>
+                            <li id="uuid"></li>
+                            <li id="model"></li>
+                            <li id="connection"></li>
+                        </ul>
+                    </div>
+                </div>
+                </ion-content>
+            </ion-content>
+        </div>
+
+        <script>
+            async function openMenu() {
+                await menuController.open();
+            }
+        </script>
+        <ion-header>
+        </ion-header>
+
+    </ion-app>
+</body>
+
+</html>
+
+<style>
+
+</style>
