@@ -1,1 +1,4 @@
 # ProjetConference
+SYED KHASIM Jaed
+PELECQ LUCAS
+CHONIGBAUM Emeric
